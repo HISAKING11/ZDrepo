@@ -1,0 +1,85 @@
+.contact {
+  background-image: url('/src/assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.contact h1 {
+  color: #000000af;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}
+
+.contact label {
+  display: block;
+  color: hsla(0, 0%, 10%, 0.849);
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 2px solid hsla(0, 0%, 33%, 0.605);
+  border-radius: 5px;
+  background-color: rgba(83, 83, 83, 0.833);
+  color: #000000;
+  font-size: 1rem;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  border-color: #333333;
+  background-color: #727272;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: #9a9a9a;
+}
+
+.contact textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact button {
+  background-color: #333333b6;
+  color: #ffffff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.434);
+  transition: all 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #333333;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+  transform: translateY(-1.5px);
+}

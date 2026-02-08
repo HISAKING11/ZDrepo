@@ -1,0 +1,108 @@
+.admin-page {
+  background-image: url("/src/assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 16px 40px;
+  font-family: "Arial", Helvetica, sans-serif;
+}
+
+.admin-page *,
+.admin-page *::before,
+.admin-page *::after {
+  box-sizing: border-box;
+}
+
+.admin-card {
+  width: min(620px, 92vw);
+  background: rgba(20, 20, 20, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  padding: 28px 26px 30px;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.admin-title {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0 0 22px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.admin-form {
+  display: grid;
+  gap: 14px;
+  width: 100%;
+}
+
+.admin-label {
+  display: grid;
+  gap: 6px;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  width: 100%;
+}
+
+.admin-input {
+  width: 100%;
+  max-width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 1rem;
+  transition: border 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.admin-input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.08);
+}
+
+.admin-button {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.admin-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+}
+
+.admin-button.primary {
+  background: rgba(80, 80, 80, 0.7);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.admin-button.primary:hover {
+  background: rgba(100, 100, 100, 0.85);
+}
+
+@media (max-width: 520px) {
+  .admin-card {
+    padding: 22px 18px 24px;
+  }
+
+  .admin-title {
+    font-size: 1.8rem;
+  }
+
+}
